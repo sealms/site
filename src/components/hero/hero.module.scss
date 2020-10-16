@@ -1,0 +1,76 @@
+@import "../../assets/styles/colors";
+
+.hero {
+  padding: 5rem 2rem;
+  background: $brand-color;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 40% auto;
+  border-radius: 10px;
+  max-width: 75em;
+  margin: 0 auto;
+  gap: 2vw;
+}
+.header-image {
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8rem;
+  background-color: $black;
+  color: $white;
+  margin: 1.5rem 0;
+  text-align: center;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  color: #fde4df;
+}
+
+@media (max-width: 799px) {
+  .hero {
+    padding: 0;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fde4df;
+    max-width: 1280px;
+    padding: 8vw 2rem;
+    margin: 0 auto 2.5rem auto;
+  }
+
+  .hero-left {
+    p {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      padding: 2vw 4vw;
+      margin-top: 0;
+    }
+  }
+  .btn {
+    margin: 4vw;
+  }
+}
