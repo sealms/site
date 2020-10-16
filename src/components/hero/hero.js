@@ -20,7 +20,7 @@ const Hero = () => {
         <div className={styles.heroLeft}>
           <h1>Dream big , we will handle the rest.</h1>
           <p>
-            We are Sealms a digital agency from Dunedin , New Zealand. We are
+            We are Sealms a digital agency from Dublin, Ireland. We are
             specialised in handcrafting custum websites and mobile apps for
             small and medium size businesses.
           </p>
