@@ -1,0 +1,97 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
+@font-face {
+  font-family: Recoleta-Regular;
+  font-display: swap;
+  src: url(../../assets/fonts/Recoleta-Regular.ttf);
+}
+
+@font-face {
+  font-family: Recoleta-Medium;
+  font-display: swap;
+  src: url(../../assets/fonts/Recoleta-Medium.ttf);
+}
+
+@font-face {
+  font-family: Recoleta-Bold;
+  font-display: swap;
+  src: url(../../assets/fonts/Recoleta-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+}
+
+body {
+  font: 100%/1.55 $font-stack;
+  opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Recoleta-Regular", Times, serif;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: $black;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $black;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

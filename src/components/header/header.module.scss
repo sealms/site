@@ -1,0 +1,114 @@
+@import "../../assets/styles/colors";
+
+header {
+  background: $brand-color;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 2rem;
+  position: sticky;
+  z-index: 10;
+
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 11;
+  a svg {
+    max-width: 7rem;
+    height: auto;
+  }
+}
+
+nav {
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    opacity: 1;
+    li {
+      padding: 3rem 1.5rem;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+    a:hover {
+      color: $black;
+      border-bottom: 2px solid $black;
+      padding-bottom: 4px;
+    }
+
+    .active-nav-item {
+      color: $black;
+      border-bottom: 2px solid $black;
+      padding-bottom: 4px;
+      transition: border-bottom 80ms ease-in-out;
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  nav {
+    .mobile-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 2.5rem 0;
+    }
+
+    .nav-items {
+      background-color: #d1d3d9;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+      left: 0;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      transition: transform 0.35s ease-in;
+
+      li {
+        font-family: Recoleta-Medium;
+        font-size: 1.75rem;
+        cursor: pointer;
+        padding: 2.5vw;
+      }
+      a:hover {
+        color: #000;
+        border-bottom: 2.5px solid $black;
+        padding-bottom: 1px;
+      }
+
+      .active-nav-item {
+        color: #000;
+        border-bottom: 2.5px solid $black;
+        padding-bottom: 1px;
+      }
+    }
+    .toggle-open {
+      transform: translateX(0%);
+    }
+
+    html.toogle-open {
+      position: fixed;
+      overflow: hidden;
+    }
+    .toggle-closed {
+      transform: translateX(-100%);
+    }
+  }
+}
