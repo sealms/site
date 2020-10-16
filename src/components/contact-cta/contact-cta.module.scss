@@ -1,0 +1,35 @@
+@import "../../assets/styles/colors";
+
+.contact {
+  background-color: $black;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  max-width: 75rem;
+  padding: 10rem 4rem;
+  margin: 0 auto;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  h1 {
+    margin-top: 0;
+    color: $white;
+  }
+}
+
+@media (max-width: 799px) {
+  .contact-grid {
+    padding: 16vw 8vw;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
